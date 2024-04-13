@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheat Sheet Javascript</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p><h1><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg" alt="html" width="100">Cheat Sheet</h1></p>
+<main>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="search()">Search</button>
+        <ul id="searchResults"></ul>
+    </div>
+<br>
+<div class="group1">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Javascript Basics</h2>
+    </div>
+    <div class="group1-content hidden">
+    <p>Including JavaScript in an HTML Page</p>
+    <p><code>&lt;script&gt; &lt;/script&gt;type="text/javascript"></code>
+    <p>Call an External JavaScript File
+    <p><code>&lt;script src="myscript.js"></code>
+    <p>Including Comments
+    <p>//
+    <p>Single line comments
+    <p>/* comment here */
+    <p>Multi-line comments
+</div>
+<div class="group2">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Variables</h2>
+    </div>
+    <div class="group2-content hidden">
+    <h3>var, const, let</h3>
+    <p><code>var</code>
+    The most common variable. Can be reassigned but only accessed within a function. Variables defined with var move to the top when code is executed. 
+    <p><code>const</code>
+    Cannot be reassigned and not accessible before they appear within the code. 
+    <p><code>let</code>
+    Similar to const, however, let variable can be reassigned but not re-declared.
+    <br>
+    <h3>Data Types</h3>
+    <p><code>var age = 23</code>
+    <p>Numbers
+    <p><code>var x</code>
+    <h3>Variables</h3>     
+    <p><code>var a = "init"</code>
+    <p>Text (strings)    
+    <p><code>var b = 1 + 2 + 3</code>
+    <p>Operations
+    <p><code>var c = true</code>
+    <p>True or false statements
+    <p><code>const PI = 3.14</code>
+    <p>Constant numbers 
+    <p><code>var name = {firstName:"John", lastName:”Doe"}</code>
+    <p>Objects
+    <p><code>var person = 
+    <p>{
+    <p>firstName:"John",
+    <p>lastName:"Doe", 
+    <p>age:20,
+    <p>nationality:"German"</code>
+    };
+</div>
+<div class="group3">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Array</h2>
+    </div>
+    <div class="group3-content hidden">
+    <h3>Array Methods</h3>
+    <p><code>concat()</code>
+    <p> Join several arrays into one
+    <p><code> indexOf()</code>
+    <p>    Returns the first position at which a given element appears in an array
+    <p><code>    join()</code>
+    <p>    Combine elements of an array into a single string and return the string
+    <p><code>    lastIndexOf()</code>
+    <p>    Gives the last position at which a given element appears in an array
+    <p><code>    pop()</code>
+    <p>    Removes the last element of an array
+    <p><code>    push()</code>
+    <p>    Add a new element at the end
+    <p><code>    reverse()</code>
+    <p>    Reverse the order of the elements in an array
+    <p><code>    shift()</code>
+    <p>    Remove the first element of an array
+    <p><code>    slice()</code>
+    <p>    Pulls a copy of a portion of an array into a new array of 4 24
+    <p><code>    sort()</code>
+    <p>    Sorts elements alphabetically
+    <p><code>    splice()</code>
+    <p>    Adds elements in a specified way and position
+    <p><code>    toString()</code>
+    <p>    Converts elements to strings
+    <p><code>    unshift()</code>
+    <p>    Adds a new element to the beginning
+    <p><code>    valueOf()</code>
+    <p>    Returns the primitive value of the specified object
+    </div>
+
+<div class="group4">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Operators</h2>
+    </div>
+    <div class="group4-content hidden">  
+        <h3>Basic Operators</h3>
+        <p>+	Addition
+<p>-	Subtraction
+<p>*	Multiplication
+<p>/	Division
+<p>(..) Grouping operator
+<p>%	Modulus (remainder)
+<p>++	Increment numbers
+<p>--	Decrement numbers
+
+<h3>Comparison Operators</h3>
+<p>== Equal to
+<p>=== Equal value and equal type
+<p>!= Not equal
+<p>!== Not equal value or not equal type
+<p>>  Greater than
+<p><  Less than
+<p>>= Greater than or equal to
+<p><= Less than or equal to
+<p>? Ternary operator
+
+<h3>Logical Operators</h3>
+<p>&&	Logical and
+<p>||	Logical or
+<p>!	Logical not
+
+<h3>Bitwise Operators</h3>
+<p>&  AND statement
+<p>|  OR statement
+<p>~  NOT
+<p>^  XOR
+<p><< Left shift
+<p>>> Right shift
+<p>>>> Zero fill right shift
+</div>
+<br>
+
+<div class="group5">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Functions</h2>
+    </div>
+    <div class="group5-content hidden">  
+<p><code>function name(parameter1, parameter2, parameter3) 
+<p>{
+// what the function does
+}</code></p>
+<h3>Outputting Data</h3>
+<p><code>alert()</code>
+<p>Output data in an alert box in the browser window
+<p><code>confirm()</code>
+<p>Opens up a yes/no dialog and returns true/false depending on user click
+<p><code>console.log()</code>
+<p>Writes information to the browser console, good for debugging purposes
+<p><code>document.write()</code>
+<p>Write directly to the HTML document
+<p><code>prompt()</code>
+<p>Creates an dialogue for user input
+<h3>Global Functions</h3>
+<p><code>decodeURI()</code>
+<p>Decodes a Uniform Resource Identifier (URI) created by encodeURI or similar
+<p><code>decodeURIComponent()</code>
+<p>Decodes a URI component
+<p><code>encodeURI()</code>
+<p>Encodes a URI into UTF-8
+<p><code>encodeURIComponent()</code>
+<p>Same but for URI components
+<p><code>eval()</code>
+<p>Evaluates JavaScript code represented as a string
+<p><code>isFinite()</code>
+<p>Determines whether a passed value is a finite number
+<p><code>isNaN()</code>
+<p>Determines whether a value is NaN or not
+<p><code>Number()</code>
+<p>Returns a number converted from its argument
+<p><code>parseFloat()</code>
+<p>Parses an argument and returns a floating point number
+<p><code>parseInt()</code>
+<p>Parses its argument and returns an integer
+</div>
+
+<div class="group6">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Loops</h2>
+    </div>
+    <div class="group6-content hidden">  
+<p><code>for</code> (before loop; condition for loop; execute after loop) {
+    <p>// what to do during the loop
+}
+<p><code>for</code>
+<p>The most common way to create a loop in Javascript
+<p><code>while</code>
+<p>Sets up conditions under which a loop executes
+<p><code>do while</code>
+<p>Similar to the while loop, however, it executes at least once and performs a check at the end to see if the condition is met to execute again
+<p><code>break</code>
+<p>Used to stop and exit the cycle at certain conditions
+<p><code>continue</code>
+Skip parts of the cycle if certain conditions are met of 7 24
+</div>
+
+<div class="group7">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>If - Else Statements</h2>
+    </div>
+    <div class="group7-content hidden">  
+if (condition) {
+// what to do if condition is met
+} else {
+// what to do if condition is not met
+}
+</div>
+
+<div class="group8">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Strings</h2>
+    </div>
+    <div class="group8-content hidden"> 
+<p>var person = "John Doe";
+<h3>Escape Characters</h3>
+<p><code>\'</code> — Single quote
+<p><code>\"</code> — Double quote
+<p><code>\\</code> — Backslash
+<p><code>\b</code> — Backspace
+<p><code>\f</code> — Form feed
+<p><code>\n</code> — New line
+<p><code>\r</code> — Carriage return
+<p><code>\t</code> — Horizontal tabulator 
+<p><code>\v</code>	— Vertical tabulator
+<h3>String Methods</h3>
+<h3>Escape Characters</h3>
+<p><code>charAt()</code>
+<p>Returns a character at a specified position inside a string
+<p><code>charCodeAt()</code>
+<p>Gives you the unicode of character at that position
+<p><code>concat()</code>
+<p>Concatenates (joins) two or more strings into one
+<p><code>fromCharCode()</code>
+<p>Returns a string created from the specified sequence of UTF-16 code units
+<p><code>indexOf()</code>
+<p>Provides the position of the first occurrence of a specified text within a string
+<p><code>lastIndexOf()</code>
+<p>Same as indexOf() but with the last occurrence, searching backwards
+<p><code>match()</code>
+<p>Retrieves the matches of a string against a search pattern
+<p><code>replace()</code>
+<p>Find and replace specific text in a string
+<p><code>search()</code>
+<p>Executes a search for a matching text and returns its position
+<p><code>slice()</code>
+<p>Extracts a section of a string and returns it as a new string
+<p><code>split()</code>
+<p>Splits a string object into an array of strings at a specified position
+<p><code>substr()</code>
+<p>Similar to slice() but extracts a substring depended on a specified number of characters
+<p><code>substring()</code>
+<p>Also similar to slice() but can’t accept negative indices
+<p><code>toLowerCase()</code>
+<p>Convert strings to lowercase
+<p><code>toUpperCase()</code>
+<p>Convert strings to uppercase
+<p><code>valueOf()</code>
+<p>Returns the primitive value (that has no properties or methods) of a string object
+</div>
+
+<div class="group9">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Regular Expressions</h2>
+    </div>
+    <div class="group9-content hidden"> 
+<h3>Pattern Modifiers</h3>
+<p><code>e</code> — Evaluate replacement
+<p><code>i</code> — Perform case-insensitive matching g — Perform global matching
+<p><code>m</code> — Perform multiple line matching s — Treat strings as single line
+<p><code>x</code> — Allow comments and whitespace in pattern U — Non Greedy pattern
+<h3>Brackets</h3>
+<p><code>[abc]</code>	Find any of the characters between the brackets [^abc]	Find any character not in the brackets
+<p><code>[0-9]</code>	Used to find any digit from 0 to 9
+<p><code>[A-z]</code>	Find any character from uppercase A to lowercase z (a|b|c)	Find any of the alternatives separated with |
+
+<h3>Metacharacters</h3>
+<p><code>.</code>   — Find a single character, except newline or line terminator
+<p><code>\w</code>  — Word character
+<p><code>\W</code>  — Non-word character
+<p><code>\d</code>  — A digit
+<p><code>\D</code>  — A non-digit character
+<p><code>\s</code>  — Whitespace character
+<p><code>\S</code>  — Non-whitespace character
+<p><code>\b</code>  — Find a match at the beginning/end of a word
+<p><code>\B</code>  — A match not at the beginning/end of a word
+<p><code>\0</code>  — NUL character
+<p><code>\n</code>  — A new line character
+<p><code>\f</code>  — Form feed character
+<p><code>\r</code>  — Carriage return character
+<p><code>\t</code>  — Tab character
+<p><code>\v</code>  — Vertical tab character
+<p><code>\xxx</code> — The character specified by an octal number xxx
+<p><code>\xdd</code> — Character specified by a hexadecimal number dd
+<p><code>\uxxxx</code> — The Unicode character specified by a hexadecimal number xxxx
+
+<h3>Quantifiers</h3>
+<p><code>n+</code>  — Matches any string that contains at least one n
+<p><code>n*</code>  — Any string that contains zero or more occurrences of n n? — A string that contains zero or one occurrences of n n{X} — String that contains a sequence of X n’s
+<p><code>n{X,Y}</code> — Strings that contains a sequence of X to Y n’s
+<p><code>n{X,}</code> — Matches any string that contains a sequence of at least X n’s n$    — Any string with n at the end of it
+<p><code>^n</code>  — String with n at the beginning of it
+<p><code>?=n</code> — Any string that is followed by a specific string n
+<p><code>?!n</code> — String that is not followed by a specific string n
+
+</div>
+<div class="group10">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Numbers and Math</h2>
+    </div>
+    <div class="group10-content hidden"> 
+<h3>Number PropertiesM</h3>
+<p><code>MAX_VALUE</code>
+<p>The maximum numeric value representable in JavaScript
+<p><code>MIN_VALUE</code>
+<p>Smallest positive numeric value representable in JavaScript
+<p><code>NaN</code>
+<p>The “Not-a-Number” value
+<p><code>NEGATIVE_INFINITY</code>
+<p>The negative Infinity value
+<p><code>POSITIVE_INFINITY</code>
+<p>Positive Infinity value</p>
+<h3>Number Methods</h3>
+<p><code>toExponential()</code>
+<p>Returns a string with a rounded number written as exponential notation
+<p><code>toFixed()</code>
+<p>Returns the string of a number with a specified number of decimals
+<p><code>toPrecision()</code>
+<p>String of a number written with a specified length
+<p><code>toString()</code>
+<p>Returns a number as a string
+<p><code>valueOf()</code>
+<p>Returns a number as a number
+<p><code>split()</code>
+<p>Splits a string object into an array of strings at a specified position
+<p><code>substr()</code>
+<p>Similar to slice() but extracts a substring depended on a specified number of characters
+<p><code>substring()</code>
+<p>Also similar to slice() but can’t accept negative indices
+<p><code>toLowerCase()</code>
+<p>Convert strings to lowercase
+<p><code>toUpperCase()</code>
+<p>Convert strings to uppercase
+<p><code>valueOf()</code>
+<p>Returns the primitive value (that has no properties or methods) of a string object
+
+<h3>Math Properties</h3>
+<p><code>E</code>   Euler’s number
+<p><code>LN2</code> The natural logarithm of 2
+<p><code>LN10</code>    Natural logarithm of 10 LOG2E   Base 2 logarithm of E LOG10E    Base 10 logarithm of E PI   The number PI
+<p><code>SQRT1_2</code> Square root of 1/2 SQRT2    The square root of 2
+
+<h3>Math Methods</h3>
+<p><code>abs(x)</code>
+<p>Returns the absolute (positive) value of x
+<p><code>acos(x)</code>
+<p>The arccosine of x, in radians
+<p><code>asin(x)</code>
+<p>Arcsine of x, in radians
+<p><code>atan(x)</code>
+<p>The arctangent of x as a numeric value
+<p><code>atan2(y,x)</code>
+<p>Arctangent of the quotient of its arguments
+<p><code>ceil(x)</code>
+<p>Value of x rounded up to its nearest integer
+<p><code>cos(x)</code>
+<p>The cosine of x (x is in radians)
+<p><code>exp(x)</code>
+<p>Value of Ex
+<p><code>floor(x)</code>
+<p>The value of x rounded down to its nearest integer
+<p><code>log(x)</code>
+<p>The natural logarithm (base E) of x
+<p><code>max(x,y,z,...,n)</code>
+<p>Returns the number with the highest value
+<p><code>min(x,y,z,...,n)</code>
+<p>Same for the number with the lowest value
+<p><code>pow(x,y)</code>
+<p>X to the power of y
+<p><code>random()</code>
+<p>Returns a random number between 0 and 1
+<p><code>round(x)</code>
+<p>The value of x rounded to its nearest integer
+<p><code>sin(x)</code>
+<p>The sine of x (x is in radians)
+<p><code>sqrt(x)</code>
+<p>Square root of x
+<p><code>tan(x)</code>
+<p>The tangent of an angle
+</div>
+
+<div class="group11">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Dealing with Dates</h2>
+    </div>
+    <div class="group11-content hidden"> 
+<h3>Setting Dates</h3>
+<p><code>Date()</code>
+<p>Creates a new date object with the current date and time
+<p><code>Date(2017, 5, 21, 3, 23, 10, 0)</code>
+<p>Create a custom date object. The numbers represent year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for year and month.
+<p><code>Date("2017-06-23")</code>
+<p>Date declaration as a string
+<h3>Pulling Date and Time Values</h3>
+<p><code>getDate()</code>
+<p>Get the day of the month as a number (1-31)
+<p><code>getDay()</code>
+<p>The weekday as a number (0-6)
+<p><code>getFullYear()</code>
+<p>Year as a four digit number (yyyy)
+<p><code>getHours()</code>
+<p>Get the hour (0-23)
+<p><code>getMilliseconds()</code>
+<p>The millisecond (0-999)
+<p><code>getMinutes()</code>
+<p>Get the minute (0-59)
+<p><code>getMonth()</code>
+<p>Month as a number (0-11)
+<p><code>getSeconds()</code>
+<p>Get the second (0-59)
+<p><code>getTime()</code>
+<p>Get the milliseconds since January 1, 1970
+<p><code>getUTCDate()</code>
+<p>The day (date) of the month in the specified date according to universal time (also available for day, month, fullyear, hours, minutes etc.)
+<p><code>parse</code>
+<p>Parses a string representation of a date, and returns the number of milliseconds since January 1, 1970
+<p><code>Set Part of a Date</code>
+<p>setDate()</code>
+<p>Set the day as a number (1-31)
+<p><code>setFullYear()</code>
+<p>Sets the year (optionally month and day)
+<p><code>setHours()</code>
+<p>Set the hour (0-23)
+<p><code>setMilliseconds()</code>
+<p>Set milliseconds (0-999)
+<p><code>setMinutes()</code>
+<p>Sets the minutes (0-59)
+<p><code>setMonth()</code>
+<p>Set the month (0-11)
+<p><code>setSeconds()</code>
+<p>Sets the seconds (0-59)
+<p><code>setTime()</code>
+<p>Set the time (milliseconds since January 1, 1970)
+<p><code>setUTCDate()</code>
+<p>Sets the day of the month for a specified date according to universal time (also available for day, month, fullyear, hours, minutes etc.)
+
+</div>
+<div class="group12">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>DOM Node</h2>
+    </div>
+    <div class="group12-content hidden"> 
+<h3>Node Properties</h3>
+<p><code>attributes</code>
+<p>Returns a live collection of all attributes registered to and element
+<p><code>baseURI</code>
+<p>Provides the absolute base URL of an HTML element
+<p><code>childNodes</code>
+<p>Gives a collection of an element’s child nodes
+<p><code>firstChild</code>
+<p>Returns the first child node of an element</code>
+<p><code>lastChild</code>
+<p>The last child node of an element</code>
+<p><code>nextSibling</code>
+<p>Gives you the next node at the same node tree level</code>
+<p><code>nodeName</code>
+<p>Returns the name of a node</code>
+<p><code>nodeType</code>
+<p>Returns the type of a node</code>
+<p><code>nodeValue</code>
+<p>Sets or returns the value of a node</code>
+<p><code>ownerDocument</code>
+<p>The top-level document object for this node</code>
+<p><code>parentNode</code>
+<p>Returns the parent node of an element</code>
+<p><code>previousSibling</code>
+<p>Returns the node immediately preceding the current one</code>
+<p><code>textContent</code>
+<p>Sets or returns the textual content of a node and its descendants</code>
+
+<h3>Node Methods</h3>
+<p><code>appendChild()</code>
+<p>Adds a new child node to an element as the last child node
+<p><code>cloneNode()</code>
+<p>Clones an HTML element
+<p><code>compareDocumentPosition()</code>
+<p>Compares the document position of two elements
+<p><code>getFeature()</code>
+<p>Returns an object which implements the APIs of a specified feature
+<p><code>hasAttributes()</code>
+<p>Returns true if an element has any attributes, otherwise false
+<p><code>hasChildNodes()</code>
+<p>Returns true if an element has any child nodes, otherwise false
+<p><code>insertBefore()</code>
+<p>Inserts a new child node before a specified, existing child node
+<p><code>isDefaultNamespace()</code>
+<p>Returns true if a specified namespaceURI is the default, otherwise false
+<p><code>isEqualNode()</code>
+<p>Checks if two elements are equal
+<p><code>isSameNode()</code>
+<p>Checks if two elements are the same node
+<p><code>isSupported()</code>
+<p>Returns true if a specified feature is supported on the element
+<p><code>lookupNamespaceURI()</code>
+<p>Returns the namespaceURI associated with a given node
+<p><code>lookupPrefix()</code>
+<p>Returns a DOMString containing the prefix for a given namespaceURI, if present
+<p><code>normalize()</code>
+<p>Joins adjacent text nodes and removes empty text nodes in an element
+<p><code>removeChild()</code>
+<p>Removes a child node from an element
+<p><code>replaceChild()</code>
+<p>Replaces a child node in an element
+<h3>Element Methods</h3>
+<p><code>getAttribute()</code>
+<p>Returns the specified attribute value of an element node
+<p><code>getAttributeNS()</code>
+<p>Returns string value of the attribute with the specified namespace and name
+<p><code>getAttributeNode()<p></code>
+<p>Gets the specified attribute node
+<p><code>getAttributeNodeNS()<p></code>
+<p>Returns the attribute node for the attribute with the given namespace and name
+<p><code>getElementsByTagName()<p></code>
+<p>Provides a collection of all child elements with the specified tag name
+<p><code>getElementsByTagNameNS()<p></code>
+<p>Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace
+<p><code>hasAttribute()<p></code>
+<p>Returns true if an element has any attributes, otherwise false
+<p><code>hasAttributeNS()<p></code>
+<p>Provides a true/false value indicating whether the current element in a given namespace has the specified attribute
+<p><code>removeAttribute()<p></code>
+<p>Removes a specified attribute from an element
+<p><code>removeAttributeNS()<p></code>
+<p>Removes the specified attribute from an element within a certain namespace
+<p><code>removeAttributeNode()<p></code>
+<p>Takes away a specified attribute node and returns the removed node
+<p><code>setAttribute()<p></code>
+<p>Sets or changes the specified attribute to a specified value
+<p><code>setAttributeNS()<p></code>
+<p>Adds a new attribute or changes the value of an attribute with the given namespace and name
+<p><code>setAttributeNode()<p></code>
+<p>Sets or changes the specified attribute node
+<p><code>setAttributeNodeNS()<p></code>
+<p>Adds a new namespaced attribute node to an element
+</div>
+
+<div class="group13">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Working with the Browser</h2>
+    </div>
+    <div class="group13-content hidden"> 
+<h3>Window Properties</h3>
+<p><code>closed</code>
+<p>Checks whether a window has been closed or not and returns true or false
+<p><code>defaultStatus</code>
+<p>Sets or returns the default text in the statusbar of a window
+<p><code>document</code>
+<p>Returns the document object for the window
+<p><code>frames</code>
+<p>Returns all &lt;iframe&gt; elements in the current window
+<p><code>history</code>
+<p>Provides the History object for the window
+<p><code>innerHeight</code>
+<p>The inner height of a window’s content area
+<p><code>innerWidth</code>
+<p>The inner width of the content area
+<p><code>length</code>
+<p>Find out the number of &lt;iframe&gt; elements in the window
+<p><code>location</code>
+<p>Returns the location object for the window
+<p><code>name</code>
+<p>Sets or returns the name of a window
+<p><code>navigator</code>
+<p>Returns the Navigator object for the window
+<p><code>opener</code>
+<p>Returns a reference to the window that created the window
+<p><code>outerHeight</code>
+<p>The outer height of a window, including toolbars/ scrollbars
+<p><code>outerWidth</code>
+<p>The outer width of a window, including toolbars/ scrollbars
+<p><code>pageXOffset</code>
+<p>Number of pixels the current document has been scrolled horizontally
+<p>pageYOffset</code>
+<p>Number of pixels the document has been scrolled vertically
+<p><code>parent</code>
+<p>The parent window of the current window
+<p><code>screen</code>
+<p>Returns the Screen object for the window
+<p><code>screenLeft</code>
+<p>The horizontal coordinate of the window (relative to screen)
+<p><code>screenTop</code>
+<p>The vertical coordinate of the window
+<p><code>screenX</code>
+<p>Same as screenLeft but needed for some browsers
+<p><code>screenY</code>
+<p>Same as screenTop but needed for some browsers
+<p><code>self</code>
+<p>Returns the current window
+<p><code>status</code>
+<p>Sets or returns the text in the statusbar of a window
+<p><code>top</code>
+<p>Returns the topmost browser window
+<h3>Window Methods</h3>
+<p><code>alert()</code>
+<p>Displays an alert box with a message and an OK button
+<p><code>blur()</code>
+<p>Removes focus from the current window
+<p><code>clearInterval()</code>
+<p>Clears a timer set with setInterval()
+<p><code>clearTimeout()</code>
+<p>Clears a timer set with setTimeout()
+<p><code>close()</code>
+<p>Closes the current window
+<p><code>confirm()</code>
+<p>Displays a dialogue box with a message and an OK and Cancel button
+<p>focus()</code>
+<p>Sets focus to the current window
+<p><code>moveBy()</code>
+<p>Moves a window relative to its current position
+<p><code>moveTo()</code>
+<p>Moves a window to a specified position
+<p><code>open()</code>
+<p>Opens a new browser window
+<p><code>print()</code>
+<p>Prints the content of the current window
+<p><code>prompt()</code>
+<p>Displays a dialogue box that prompts the visitor for input
+<p><code>resizeBy()</code>
+<p>Resizes the window by the specified number of pixels
+<p><code>resizeTo()</code>
+<p>Resizes the window to a specified width and height
+<p><code>scrollBy()</code>
+<p>Scrolls the document by a specified number of pixels
+<p><code>scrollTo()</code>
+<p>Scrolls the document to specific coordinates
+<p><code>setInterval()</code>
+<p>Calls a function or evaluates an expression at specified intervals
+<p><code>setTimeout()</code>
+<p>Calls a function or evaluates an expression after a specified interval
+<p><code>stop()</code>
+<p>Stops the window from loading
+<h3>Screen Properties</h3>
+<p><code>availHeight</code>
+<p>Returns the height of the screen (excluding the Windows Taskbar)
+<p><code>availWidth</code>
+<p>Returns the width of the screen (excluding the Windows Taskbar)
+<p><code>colorDepth</code>
+<p>Returns the bit depth of the color palette for displaying images
+<p><code>height</code>
+<p>The total height of the screen
+<p><code>pixelDepth</code>
+<p>The color resolution of the screen in bits per pixel
+<p><code>width</code>
+<p>The total width of the screen
+
+</div>
+<div class="group14">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Events</h2>
+    </div>
+    <div class="group14-content hidden">
+<h3>Mouse</h3>
+<p><code>onclick</code>
+<p>The event occurs when the user clicks on an element
+<p><code>oncontextmenu</code>
+<p>User right-clicks on an element to open a context menu
+<p><code>ondblclick</code>
+<p>The user double-clicks on an element
+<p><code>onmousedown</code>
+<p>User presses a mouse button over an element
+<p><code>onmouseenter</code>
+<p>The pointer moves onto an element
+<p><code>onmouseleave</code>
+<p>Pointer moves out of an element
+<p><code>onmousemove</code>
+<p>The pointer is moving while it is over an element
+<p><code>onmouseover</code>
+<p>When the pointer is moved onto an element or one of its children
+<p><code>onmouseout</code>
+<p>User moves the mouse pointer out of an element or one of its children
+<p><code>onmouseup</code>
+<p>The user releases a mouse button while over an element
+
+<h3>Keyboard</h3>
+<p><code>onkeydown</code>
+<p>When the user is pressing a key down
+<p><code>onkeypress</code>
+<p>The moment the user starts pressing a key
+<p><code>onkeyup</code>
+<p>The user releases a key
+
+<h3>Frame</h3>
+<p><code>onabort</code>
+<p>The loading of a media is aborted
+<p><code>onbeforeunload</code>
+<p>Event occurs before the document is about to be unloaded
+<p><code>onerror</code>
+<p>An error occurs while loading an external file
+<p><code>onhashchange</code>
+<p>There have been changes to the anchor part of a URL
+<p><code>onload</code>
+<p>When an object has loaded
+<p><code>onpagehide</code>
+<p>The user navigates away from a webpage
+<p><code>onpageshow</code>
+<p>When the user navigates to a webpage
+<p><code>onresize</code>
+<p>The document view is resized
+<p><code>onscroll</code>
+<p>An element’s scrollbar is being scrolled
+<p><code>onunload</code>
+<p>Event occurs when a page has unloaded
+
+<h3>Form</h3>
+<p><code>onblur</code>
+<p>When an element loses focus
+<p><code>onchange</code>
+<p>The content of a form element changes (for &lt;input&gt;, &lt;select&gt;and &lt;textarea&gt;)
+<p><code>onfocus</code>
+<p>An element gets focus
+<p><code>onfocusin</code>
+<p>When an element is about to get focus
+<p><code>onfocusout</code>
+<p>The element is about to lose focus
+<p><code>oninput</code>
+<p>User input on an element
+<p><code>oninvalid</code>
+<p>An element is invalid
+<p><code>onreset</code>
+<p>A form is reset
+<p><code>onsearch</code>
+<p>The user writes something in a search field (for &lt;input="search"&gt;)
+<p><code>onselect</code>
+<p>The user selects some text (for &lt;input&gt; and &lt;textarea&gt;)
+<p><code>onsubmit</code>
+<p>A form is submitted
+
+<h3>Drag</h3>
+<p><code>ondrag</code>
+<p>An element is dragged
+<p><code>ondragend</code>
+<p>The user has finished dragging the element
+<p><code>ondragenter</code>
+<p>The dragged element enters a drop target
+<p><code>ondragleave</code>
+<p>A dragged element leaves the drop target
+<p><code>ondragover</code>
+<p>The dragged element is on top of the drop target
+<p><code>ondragstart</code>
+<p>User starts to drag an element
+<p><code>ondrop</code>
+<p>Dragged element is dropped on the drop target
+
+<h3>Clipboard</h3>
+<p><code>oncopy</code>
+<p>User copies the content of an element
+<p><code>oncut</code>
+<p>The user cuts an element’s content
+<p><code>onpaste</code>
+<p>A user pastes content in an element
+
+<h3>Media</h3>
+<p><code>onabort</code>
+<p>Media loading is aborted
+<p><code>oncanplay</code>
+<p>The browser can start playing media (e.g. a file has buffered enough)
+<p><code>oncanplaythrough</code>
+<p>When browser can play through media without stopping
+<p><code>ondurationchange</code>
+<p>The duration of the media changes
+<p><code>onended</code>
+<p>The media has reached its end
+<p><code>onerror</code>
+<p>Happens when an error occurs while loading an external file
+<p><code>onloadeddata</code>
+<p>Media data is loaded
+<p><code>onloadedmetadata</code>
+<p>Meta Metadata (like dimensions and duration) are loaded
+<p><code>onloadstart</code>
+<p>Browser starts looking for specified media
+<p><code>onpause</code>
+<p>Media is paused either by the user or automatically
+<p><code>onplay</code>
+<p>The media has been started or is no longer paused
+<p><code>onplaying</code>
+<p>Media is playing after having been paused or stopped for buffering
+<p><code>onprogress</code>
+<p>Browser is in the process of downloading the media
+<p><code>onratechange</code>
+<p>The playing speed of the media changes
+<p><code>onseeked</code>
+<p>User is finished moving/skipping to a new position in the media
+<p><code>onseeking</code>
+<p>The user starts moving/skipping
+<p><code>onstalled</code>
+<p>The browser is trying to load the media but it is not available
+<p><code>onsuspend</code>
+<p>Browser is intentionally not loading media
+<p><code>ontimeupdate</code>
+<p>The playing position has changed (e.g. because of fast forward)
+<p><code>onvolumechange</code>
+<p>Media volume has changed (including mute)
+<p><code>onwaiting</code>
+<p>Media paused but expected to resume (for example, buffering)
+
+<h3>Animation</h3>
+<p><code>animationend</code>
+<p>A CSS animation is complete
+<p><code>animationiteration</code>
+<p>CSS animation is repeated
+<p><code>animationstart</code>
+<p>CSS animation has started
+
+<h3>Other</h3>
+<p><code>transitionend</code>
+<p>Fired when a CSS transition has completed
+<p><code>onmessage</code>
+<p>A message is received through the event source
+<p><code>onoffline</code>
+<p>Browser starts to work offline
+<p><code>ononline</code>
+<p>The browser starts to work online
+<p><code>onpopstate</code>
+<p>When the window’s history changes
+<p><code>onshow</code>
+<p>A &lt;menu&gt; element is shown as a context menu
+<p><code>onstorage</code>
+<p>A Web Storage area is updated
+<p><code>ontoggle</code>
+<p>The user opens or closes the &lt;details&gt; element
+<p><code>onwheel</code>
+<p>Mouse wheel rolls up or down over an element
+<p><code>ontouchcancel</code>
+<p>Screen touch is interrupted
+<p><code>ontouchend</code>
+<p>User finger is removed from a touch screen
+<p><code>ontouchmove</code>
+<p>A finger is dragged across the screen
+<p><code>ontouchstart</code>
+<p>Finger is placed on touch screen
+</div>
+<div class="group15">
+    <div class="group-header" onclick="toggleGroup(this)">
+        <h2>Errors</h2>
+    </div>
+    <div class="group13-content hidden">
+<p><code>try</code>
+<p>Lets you define a block of code to test for errors
+<p><code>catch</code>
+<p>Set up a block of code to execute in case of an error
+<p><code>throw</code>
+<p>Create custom error messages instead of the standard JavaScript errors
+<p><code>finally</code>
+<p>Lets you execute code, after try and catch, regardless of the result
+
+<h3>Error Name Values</h3>
+<p><code>name</code>
+<p>Sets or returns the error name
+<p><code>message</code>
+<p>Sets or returns an error message in string from
+<p><code>EvalError</code>
+<p>An error has occurred in the eval() function
+<p><code>RangeError</code>
+<p>A number is “out of range”
+<p><code>ReferenceError</code>
+<p>An illegal reference has occurred
+<p><code>SyntaxError</code>
+<p>A syntax error has occurred
+<p><code>TypeError</code>
+<p>A type error has occurred
+<p><code>URIError</code>
+<p>An encodeURI() error has occurred 
+</div>
+</main>
+<script>
+    const input = document.getElementById('searchInput');
+    const resultsList = document.getElementById('searchResults');
+
+    input.addEventListener('input', function() {
+        const query = input.value.toLowerCase().trim();
+        resultsList.innerHTML = '';
+
+        const allText = document.body.innerText.toLowerCase();
+        const lines = allText.split('\n');
+
+        lines.forEach((line, index) => {
+            if (line.includes(query)) {
+                const li = document.createElement('li');
+                li.textContent = line.trim();
+                li.addEventListener('click', () => {
+                    window.scrollTo(0, index * 20); 
+                });
+                resultsList.appendChild(li);
+            }
+        });
+
+        if (query.length > 0) {
+            resultsList.style.display = 'block';
+        } else {
+            resultsList.style.display = 'none';
+        }
+    });
+</script>
+<fieldset>
+    <legend><h2>Contact Us</h2></legend>
+    <form action="mailto: r.gomesdapaz653@bvc.ca" method="post" enctype="text/plain">
+    <label>First Name: </label>
+    <input type="text" placeholder="First Name" required minlength="3" required>
+    <br/><br>
+    <label>Last Name: </label>
+    <input type="text" placeholder="Last name" required minlength="2" required>
+    <br/><br>
+    <label>Your e-mail:</label>
+    <input type="email" placeholder="E-mail comes here" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z{2, 5}$])" required>
+    <br/><br>
+    <u>Your message: </u>
+    <br/><br>
+    <label for="multiline"></label>
+    <textarea name="msg" id="multiline" rows="4" cols="80" placeholder="Write your message here"></textarea>
+    <br/><br/>
+    <input type="submit" value="Submit">
+    </form>
+    <br/><br/>
+    </section>
+</fieldset>
+    <script src="script.js"></script>
+</body>
+</html>

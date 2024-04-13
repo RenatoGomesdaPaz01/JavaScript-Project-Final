@@ -1,0 +1,147 @@
+h1{
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+    margin: 30px;
+    left: 10px;
+}
+main {
+    padding: 15px;
+}
+
+.container {
+    margin: 20px;
+    text-align: center;
+}
+.group-header {
+    cursor: pointer;
+    background-color: lightgray;
+    padding: 10px;
+    border: 2px solid silver;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 20px;;
+}
+
+.group-header::after {
+    content: "+";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+}
+
+.group-content {
+    padding-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.group-header.open::after {
+    content: "-";
+}
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.group1 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group2 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group3 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group4 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group5 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group6 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group7 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group8 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group9 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group10 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group11 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group12 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group13 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group14 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.group15 {
+    padding: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
